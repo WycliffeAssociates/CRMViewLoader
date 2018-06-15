@@ -36,7 +36,6 @@ namespace CRMViewLoader
                 Console.WriteLine("Problem in processing");
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("If you believe this is a problem with the application please report it here: https://github.com/wycliffeassocaites/CRMViewLoader");
-                Console.ReadLine();
                 Environment.Exit(1);
             }
         }
