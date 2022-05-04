@@ -25,7 +25,7 @@ namespace CRMViewLoader
                 CrmServiceClient service = new CrmServiceClient(args.ConnectionString);
                 if (!string.IsNullOrEmpty(service.LastCrmError))
                 {
-                    throw new Exception("Error connecting to CRM");
+                    throw new Exception("Error connecting to CRM \\n" + service.LastCrmError);
                 }
                 var views = FindAllViewsInFolder(args.SourceDirectory);
                 UpdateViewsInCRM(views, service);
